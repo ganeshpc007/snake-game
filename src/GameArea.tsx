@@ -24,7 +24,7 @@ const GameArea: React.FC<GameAreaProps> = ({ snakeColor, gameSpeed }) => {
   const [direction, setDirection] = useState<Position>({ x: 0, y: 0 });
   const [score, setScore] = useState<number>(0);
   const [gameOver, setGameOver] = useState<boolean>(false);
-  const [obstacles, setObstacles] = useState<Position[]>([
+  const [obstacles] = useState<Position[]>([
     { x: 5, y: 5 },
     { x: 15, y: 15 },
   ]);
